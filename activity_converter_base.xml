@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="1">
+    /*****************************************************************
+    A new Activity called BaseConverterActivity.
+    The layout XML file by the name activity_converter_base.
+    The screen have the following components -
+    1. Application title.
+    2. A text field to enter a base number 10.
+    3. A text field to enter the base you want to convert
+    4. Button to perform conversion
+    5. Label that will display the result of the conversion.
+    ****************************************************************/
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Base Converter"
+        android:textColor="#080808"
+
+        android:textSize="24dp" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="  Enter number in base 10:"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edtNumID"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="  converter to base:"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtBaseID"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/cmdClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+            android:gravity="center"
+            android:text="Convert" />
+
+        <TextView
+            android:id="@+id/lblResult"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.54"
+            android:gravity="center"
+            android:text="Result"
+
+            />
+    </LinearLayout>
+</LinearLayout>
